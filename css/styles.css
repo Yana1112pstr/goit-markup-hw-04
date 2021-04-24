@@ -275,6 +275,32 @@ img {
     margin-bottom: 0px;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons-item {
+    margin-top: 16px;
+}
+
+.social-icons-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.social-icons-circle:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-icons-svg {
+    fill: #AFB1B8;
+}
+
 /*портфолио*/
 .bg-portfolio {
     padding-top: 94px;
