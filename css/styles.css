@@ -3,6 +3,7 @@
 --title-color: #212121;
 --accent-color: #2196F3;
 --alt-title-color: #FFFFFF;
+--icon-cl: #AFB1B8;
 
 --darc-bg: #2F303A;
 --second-bg: #F5F4FA;
@@ -119,7 +120,7 @@ img {
     margin-right: 331px;
 }
 
-.site-nav .item:not(:last-child){
+.site-nav-item:not(:last-child){
     margin-right: 50px;
 }
 
@@ -143,30 +144,39 @@ img {
     color: var(--accent-color);
 }
 
-.auth-nav {
+.auth-nav-list {
     display: flex;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.auth-nav .item:not(:last-child) {
+.auth-nav-item:not(:last-child) {
     margin-right: 50px;
 }
 
-/*Заголовок*/
-.bg-title {
-    background: var(--darc-bg);
+.adres-icon-svg {
+    fill: var(--main-text-color);
 }
 
-.main-title {
+/*Заголовок*/
+.hero {
+    background-image: url(../images/bg/bg-images.jpg);
+    max-width: 1600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.hero-content {
     justify-content: center;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
-.page-title {
+.hero-title {
     justify-content: center;
     text-align: center; 
     margin-bottom: 30px;
@@ -179,7 +189,7 @@ img {
     color: var(--alt-title-color);
 }
 
-.btn {
+.hero-btn {
     width: 200px;
     height: 50px;
 
@@ -200,13 +210,24 @@ img {
 }
 
 /*Принципы работы*/
-.bg-principle {
+.about {
     padding-top: 94px;
-
     background-color:var(--three-bg);
 }
 
-.principle {
+.about-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-item {
+    width: 270px;
+}
+
+.about-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
@@ -214,15 +235,20 @@ img {
     color: var(--title-color);
 }
 
-.principle-text {
+.about-icon-circle{
     width: 270px;
-    height: 75px;
-    margin-top: 10px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
 }
 
 /*Чем занимаемся*/
 .work {
     background-color:var(--three-bg);
+
 }
 
 .section-title {
@@ -272,19 +298,18 @@ img {
 }
 
 .text-prof {
-    margin-bottom: 0px;
+    margin-bottom: 16px;
 }
 
-.social-icons {
-    display: flex;
-    justify-content: center;
+.social-icons-list {
+    display: inline-flex
 }
 
-.social-icons-item {
-    margin-top: 16px;
+.social-icons-item:not(:last-child) {
+    margin-right: 10px;
 }
 
-.social-icons-circle {
+.social-icons-link {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,12 +318,47 @@ img {
     border-radius: 50%;
 }
 
-.social-icons-circle:not(:last-child) {
-    margin-right: 10px;
+.social-icons-svg {
+    fill: var(--icon-cl);
+    width: 20px;
+    height: 20px;
 }
 
-.social-icons-svg {
-    fill: #AFB1B8;
+.social-icons-link:hover {
+    background-color: var(--accent-color);
+}
+
+.social-icons-link:hover .social-icons-svg {
+    fill:var(--alt-title-color);
+}
+
+/*Клиенты*/
+.client-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.client-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+
+    width: 170px;
+    height: 92px; 
+}
+
+.client-icons-circle {
+    border: 1px solid --#AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;     
+}
+
+.client-icons-svg {
+    fill: var(--icon-cl)
+}
+
+.client-icons-svg:hover {
+    fill: var(--accent-color);
 }
 
 /*портфолио*/
@@ -386,6 +446,15 @@ img {
     padding-bottom: 60px;
     background-color: var(--darc-bg);
 }
+
+.footer-sections {
+    display: flex;
+}
+
+.footer-container {
+    width: 300px;
+}
+
 .footer .logo {
     margin-bottom: 20px;
 }
@@ -399,4 +468,42 @@ img {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     margin-top: 9px;
+}
+
+.footer-title {
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    color: var(--alt-title-color);
+}
+
+.footer-icons-list {
+    display: inline-flex;
+}
+
+.footer-icons-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-icons-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;  
+    background: rgba(255, 255, 255, 0.1); 
+}
+
+.footer-icons-link:hover {
+    background: var(--accent-color);
+}
+
+.footer-icons-svg {
+    fill: #FFFFFF;
+    width: 20px;
+    height: 20px;
 }
