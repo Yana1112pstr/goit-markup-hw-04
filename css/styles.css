@@ -76,15 +76,15 @@ img {
 }
 
 /*шапка сайта*/
-.bg-header {
+.header {
     background: var(--three-bg);
 
     border-bottom: 1px solid #ECECEC;
 }
 
-.header {
+.header-sections {
     display: flex;
-
+    justify-content: space-between;
 }
 
 .logo {
@@ -101,8 +101,8 @@ img {
 
 .header-logo {
     margin-top: 24px;
-    margin-bottom: 25px;
     margin-right: 93px;    
+    margin-bottom: 25px;
 }
 
 .upper-logo {
@@ -113,50 +113,61 @@ img {
     color: var(--alt-title-color);
 }
 
-.site-nav {
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 930px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.site-nav-list {
     display: flex;
     align-items: center;
-
-    margin-right: 331px;
+    color: var(--title-color);
 }
 
 .site-nav-item:not(:last-child){
     margin-right: 50px;
 }
 
-.site-nav .link{
-    display: block;
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    color: var(--title-color);
-    text-decoration: none;
-}
-
-.site-nav .link:hover {
-    color: var(--accent-color);
-}
-
-.site-nav .current {
+.site-nav-list .current {
     color: var(--accent-color);
 }
 
 .auth-nav-list {
     display: flex;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: flex-end;
 }
 
 .auth-nav-item:not(:last-child) {
-    margin-right: 50px;
+    margin-right: 30px;
 }
 
-.adres-icon-svg {
+.mail-icon {
+    width: 16px;
+    height: 12px;
     fill: var(--main-text-color);
+}
+
+.tell-icon {
+    width: 10px;
+    height: 16px;
+    fill: var(--main-text-color);
+}
+
+.link:hover .mail-icon {
+    fill: var(--accent-color);
+}
+
+.link:hover .tell-icon {
+    fill: var(--accent-color);
 }
 
 /*Заголовок*/

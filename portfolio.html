@@ -13,19 +13,33 @@
 </head>
 <body>
      <!--Шапка профиля-->
-     <header class="bg-header">
+     <header class="header">
         <div class="container ">
-            <div class="header">
+            <div class="header-sections">
                 <a class="logo header-logo" href="./index.html">Web<span class="upper-logo">Studio</span></a>    
-                <ul class="site-nav list">
-                    <li class="site-nav-item"><a class="link" href="./index.html">Студия</a></li>
-                    <li class="site-nav-item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
-                    <li class="site-nav-item"><a class="link" href="#contacts">Контакты</a></li>
-                </ul>
-                <ul class="auth-nav-list list">
-                    <li class="auth-nav-item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="auth-nav-item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-                </ul>
+                <div class="header-nav"> 
+                <ul class="site-nav-list list">
+                        <li class="site-nav-item"><a class="link" href="./index.html">Студия</a></li>
+                        <li class="site-nav-item"><a class="link current" href="./portfolio.html">Портфолио</a></li>
+                        <li class="site-nav-item"><a class="link" href="#contacts">Контакты</a></li>
+                    </ul>
+                    <ul class="auth-nav-list list">
+                        <li class="auth-nav-item">
+                            <a class="link" href="mailto:info@devstudio.com">
+                                <svg class="mail-icon">
+                                    <use href="./images/icons/sprite.svg#icon-mail"></use>
+                                </svg>
+                                info@devstudio.com</a>
+                        </li>
+                        <li class="auth-nav-item">
+                            <a class="link" href="tel:+380961111111">
+                                <svg class="tell-icon">
+                                    <use href="./images/icons/sprite.svg#icon-tell"></use>
+                                </svg>
+                                +38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
