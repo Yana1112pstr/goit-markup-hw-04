@@ -153,21 +153,13 @@ img {
 .mail-icon {
     width: 16px;
     height: 12px;
-    fill: var(--main-text-color);
+    fill: currentColor;
 }
 
 .tell-icon {
     width: 10px;
     height: 16px;
-    fill: var(--main-text-color);
-}
-
-.link:hover .mail-icon {
-    fill: var(--accent-color);
-}
-
-.link:hover .tell-icon {
-    fill: var(--accent-color);
+    fill: currentColor;
 }
 
 /*Заголовок*/
