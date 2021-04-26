@@ -435,7 +435,7 @@ img {
     background-color: var(--darc-bg);
 }
 
-.footer-sections {
+.footer-section {
     display: flex;
 }
 
