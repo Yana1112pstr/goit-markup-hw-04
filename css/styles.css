@@ -307,7 +307,7 @@ img {
 }
 
 .social-icons-svg {
-    fill: var(--icon-cl);
+    fill: var(--main-icon-cl);
     width: 20px;
     height: 20px;
 }
@@ -323,29 +323,29 @@ img {
 /*Клиенты*/
 .client-list {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.client-item {
+.client-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.client-icons-link {
+    border: 1px solid var(--main-icon-cl);  
+    border-radius: 4px; 
+    width: 170px;
+    height: 92px;    
+
     display: flex;
     justify-content: center;
-    align-items: center;   
-
-    width: 170px;
-    height: 92px; 
-}
-
-.client-icons-circle {
-    border: 1px solid --#AFB1B8;
-    box-sizing: border-box;
-    border-radius: 4px;     
+    align-items: center;       
 }
 
 .client-icons-svg {
-    fill: var(--icon-cl)
+    fill: var(--main-icon-cl);
 }
 
-.client-icons-svg:hover {
+.client-icons-link:hover .client-icons-svg {
     fill: var(--accent-color);
 }
 
