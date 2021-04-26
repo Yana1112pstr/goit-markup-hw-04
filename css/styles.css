@@ -341,6 +341,10 @@ img {
     align-items: center;       
 }
 
+.client-icons-link:hover {
+    border-color: var(--accent-color);
+}
+
 .client-icons-svg {
     fill: var(--main-icon-cl);
 }
